@@ -1,0 +1,34 @@
+#content {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+#about {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#about .innertop img {
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    border: none;
+    vertical-align: top;
+}
+
+#about .innerbottom {
+    font-size: 20px;
+    width: 1000px;
+    line-height: 30px;
+    margin: 0 auto;
+    margin-top: 105px;
+}
+
+#about .innerbottom .bottom-str1 {
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #5E2E2E;
+}
