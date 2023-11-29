@@ -1,9 +1,77 @@
+*{
+    text-decoration: none;
+    list-style: none;
+    padding : 0;
+    margin: 0;
+}
+
 /* header */
 
 /* menu */
 
 /* main */
-
-/* footer */
-
 /* login */
+
+.kakaobtn {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+}
+
+footer {
+    background-color: #FFFFFF;
+    min-width: 1160px;
+    color: #5e2e2e;
+    font-size: 12px;
+    padding: 50px;
+    line-height: 24px;
+}
+.logo-Register img{
+    height: 22px;
+    
+}
+
+.logo-Register {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.list-bar {
+    display: flex;
+    justify-content:space-between;
+    margin-right: 400px;
+}
+.bottom {
+    margin-top: 20px;
+}
+.bottom-text {
+    display: flex;
+    justify-content: space-between;
+}
+.bottom-img img {
+    width: 660px;
+    aspect-ratio: auto 660 / 94;
+    height: 94px;
+}
+#register {
+    font-size: 13px;
+    border: 1px solid #5e2e2e;
+    padding: 15px 0;
+    line-height: 13px;
+    width: 120px;
+    text-align: center;
+}
+#list-barNum{
+    font-size: 15px;
+}
+
+.link-icons {
+    display: flex;
+}
+.link-icons img{
+    margin-left: 10px;
+    opacity: 0.7;
+    vertical-align: middle;
+    transition-duration: 0.3s;
+}
