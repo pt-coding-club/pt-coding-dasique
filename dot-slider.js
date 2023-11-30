@@ -1,18 +1,22 @@
 const dotButtons = document.querySelectorAll('.fp-right ul li');
 const dots = document.querySelectorAll('.fp-right ul li a');
-const mainContainer = document.querySelector('main');
 const sections = document.querySelectorAll('main section');
-const lastPage = dots.length - 1;
 let activeIndex = 0;
 
 dotButtons.forEach((dotButton, index) => {
   dotButton.addEventListener('click', function handleSideButton(event) {
-    if (activeIndex !== index && activeIndex >= 0) {
+    const clientHeight = window.innerHeight;
+
+    if (activeIndex !== index) {
       dots[activeIndex].classList.remove('active');
       dots[index].classList.add('active');
+      scrollTo({
+        top: clientHeight * index,
+        behavior: 'smooth',
+      });
     }
 
-    if (activeIndex === index && activeIndex >= 0) {
+    if (activeIndex === index) {
       return;
     }
 
@@ -27,20 +31,17 @@ window.addEventListener(
   'wheel',
   event => {
     event.preventDefault();
-    console.log(sections.length);
     const clientHeight = window.innerHeight;
     const baseElementTop =
       sections[sections.length - 1].getBoundingClientRect().top;
 
-    console.log('clientHeight', clientHeight);
-    console.log('baseElementTop', baseElementTop);
     if (event.deltaY > 0) {
       wheelDown(sections, baseElementTop, clientHeight);
     }
+
     if (event.deltaY < 0) {
       wheelUp(sections, baseElementTop, clientHeight);
     }
-    console.log(event.deltaY);
   },
   { passive: false },
 );
@@ -66,8 +67,8 @@ function wheelUp(sections, baseElementTop, clientHeight) {
         behavior: 'smooth',
       });
       dots[activeIndex].classList.remove('active');
-      dots[i].classList.add('active');
-      activeIndex = i;
+      dots[sections.length - 2 - i].classList.add('active');
+      activeIndex = sections.length - 2 - i;
     }
   }
 }
