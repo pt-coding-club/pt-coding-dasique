@@ -1,0 +1,142 @@
+body {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+}
+
+main section {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+section:last-child {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+section:not(:last-child) img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+section iframe {
+  height: 100%;
+  width: 100%;
+}
+
+section:last-child {
+  overflow: hidden;
+}
+
+#scrollDots {
+  position: fixed;
+  top: 50%;
+  transform: translate(0%, -50%);
+  right: 10px;
+  padding: 10px;
+  opacity: 1;
+  z-index: 9999;
+}
+
+#scrollDots ul {
+  display: block;
+}
+
+#scrollDots ul li {
+  display: block;
+  width: 14px;
+  height: 13px;
+  margin: 7px;
+  position: relative;
+}
+
+#scrollDots ul li a {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+#scrollDots ul li a span {
+  position: absolute;
+  height: 4px;
+  width: 4px;
+  margin: -2px 0 0 -2px;
+  background-color: #5e2d2e;
+  left: 50%;
+  top: 50%;
+  border: 0;
+  border-radius: 50%;
+  transition: all 0.1s ease-in-out;
+}
+
+.fp-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+}
+
+#scrollDots ul li:hover a .fp-sr-only {
+  height: 9px;
+  width: 9px;
+  margin: -4px 0 0 -4px;
+  border-radius: 100%;
+}
+
+#scrollDots ul li a.active .fp-sr-only {
+  height: 12px;
+  width: 12px;
+  margin: -6px 0 0 -6px;
+  border-radius: 100%;
+}
+
+.snowflake {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  position: absolute;
+  top: -8px;
+}
+
+@keyframes fall {
+  from {
+  }
+  to {
+    transform: translateY(400vh);
+    opacity: 0;
+  }
+}
+
+.video-container {
+  pointer-events: none;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+}
