@@ -2,7 +2,7 @@
 
 ### 데이지크(Dasique) 클론코딩
 
-<a href="https://www.dasique.co.kr/" target="_blank">원본 사이트 링크</a>
+<a href="https://www.dasique.co.kr/" target="_blank">원본 사이트 링크</a><br> <a href="https://pt-coding-club.github.io/pt-coding-dasique/" target="_blank">최종 결과물 링크</a>
 
 ## ▶️ 프로젝트 소개
 
