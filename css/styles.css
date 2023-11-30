@@ -1,0 +1,57 @@
+@import './reset.css';
+@import './header.css';
+@import './main.css';
+@import './footer.css';
+
+/* menu */
+#menu nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+#menu nav ul li {
+  display: inline-block;
+  position: relative;
+}
+
+#menu nav ul li a {
+  color: #5e2e2e;
+  display: block;
+  font-size: 13px;
+  margin-right: 45px;
+  transition: 0.3s linear;
+}
+
+#menu a {
+  text-decoration: none;
+}
+
+ul ul {
+  list-style-type: circle;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+#menu nav ul li ul {
+  display: none;
+  position: absolute;
+  text-align: left;
+  padding: 5px 0 5px 0;
+  z-index: 100;
+  opacity: 1;
+  transition-duration: 0.3s;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+li {
+  list-style: none;
+}

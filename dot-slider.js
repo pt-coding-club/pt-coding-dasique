@@ -20,3 +20,54 @@ dotButtons.forEach((dotButton, index) => {
     dots[index].classList.add('active');
   });
 });
+
+history.scrollRestoration = 'manual';
+
+window.addEventListener(
+  'wheel',
+  event => {
+    event.preventDefault();
+    console.log(sections.length);
+    const clientHeight = window.innerHeight;
+    const baseElementTop =
+      sections[sections.length - 1].getBoundingClientRect().top;
+
+    console.log('clientHeight', clientHeight);
+    console.log('baseElementTop', baseElementTop);
+    if (event.deltaY > 0) {
+      wheelDown(sections, baseElementTop, clientHeight);
+    }
+    if (event.deltaY < 0) {
+      wheelUp(sections, baseElementTop, clientHeight);
+    }
+    console.log(event.deltaY);
+  },
+  { passive: false },
+);
+
+function wheelDown(sections, baseElementTop, clientHeight) {
+  for (let i = 1; i < sections.length; i++) {
+    if (baseElementTop === clientHeight * (sections.length - i)) {
+      scrollTo({
+        top: clientHeight * i,
+        behavior: 'smooth',
+      });
+      dots[activeIndex].classList.remove('active');
+      dots[i].classList.add('active');
+      activeIndex = i;
+    }
+  }
+}
+function wheelUp(sections, baseElementTop, clientHeight) {
+  for (let i = 0; i < sections.length; i++) {
+    if (baseElementTop === clientHeight * i) {
+      scrollTo({
+        top: clientHeight * (sections.length - 2 - i),
+        behavior: 'smooth',
+      });
+      dots[activeIndex].classList.remove('active');
+      dots[i].classList.add('active');
+      activeIndex = i;
+    }
+  }
+}
