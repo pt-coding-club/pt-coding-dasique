@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     text-decoration: none;
     list-style: none;
@@ -319,4 +320,128 @@ footer {
     opacity: 0.7;
     vertical-align: middle;
     transition-duration: 0.3s;
+=======
+body {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+}
+
+header {
+  position: absolute;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+}
+
+main section {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+section img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+section iframe {
+  height: 100%;
+  width: 100%;
+}
+
+section:last-child {
+  overflow: hidden;
+}
+
+footer {
+}
+
+#scrollDots {
+  position: fixed;
+  top: 50%;
+  transform: translate(0%, -50%);
+  right: 10px;
+  padding: 10px;
+  opacity: 1;
+}
+
+#scrollDots ul {
+  display: block;
+}
+
+#scrollDots ul li {
+  display: block;
+  width: 14px;
+  height: 13px;
+  margin: 7px;
+  position: relative;
+}
+
+#scrollDots ul li a {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+#scrollDots ul li a span {
+  position: absolute;
+  height: 4px;
+  width: 4px;
+  margin: -2px 0 0 -2px;
+  background-color: #5e2d2e;
+  left: 50%;
+  top: 50%;
+  border: 0;
+  border-radius: 50%;
+  transition: all 0.1s ease-in-out;
+}
+
+.fp-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+}
+
+#scrollDots ul li:hover a .fp-sr-only {
+  height: 9px;
+  width: 9px;
+  margin: -4px 0 0 -4px;
+  border-radius: 100%;
+}
+
+#scrollDots ul li a.active .fp-sr-only {
+  height: 12px;
+  width: 12px;
+  margin: -6px 0 0 -6px;
+  border-radius: 100%;
+}
+
+.snowflake {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  position: absolute;
+  top: -8px;
+}
+
+@keyframes fall {
+  from {
+  }
+  to {
+    transform: translateY(400vh);
+    opacity: 0;
+  }
+>>>>>>> 4c039a6 (add: snowflake and dot-slider)
 }
