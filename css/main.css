@@ -16,7 +16,7 @@ main section {
   box-sizing: border-box;
 }
 
-section img {
+section:not(:last-child) img {
   object-fit: cover;
   height: 100%;
   width: 100%;
