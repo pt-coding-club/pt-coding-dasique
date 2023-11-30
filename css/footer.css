@@ -2,6 +2,7 @@
   position: fixed;
   bottom: 40px;
   right: 40px;
+  z-index: 9999;
 }
 
 footer {
@@ -9,7 +10,7 @@ footer {
   min-width: 1160px;
   color: #5e2e2e;
   font-size: 12px;
-  padding: 50px;
+  padding: 150px;
   line-height: 24px;
 }
 
@@ -28,18 +29,22 @@ footer {
   justify-content: space-between;
   margin-right: 400px;
 }
+
 .bottom {
   margin-top: 20px;
 }
+
 .bottom-text {
   display: flex;
   justify-content: space-between;
 }
+
 .bottom-img img {
   width: 660px;
   aspect-ratio: auto 660 / 94;
   height: 94px;
 }
+
 #register {
   font-size: 13px;
   border: 1px solid #5e2e2e;
@@ -48,6 +53,7 @@ footer {
   width: 120px;
   text-align: center;
 }
+
 #list-barNum {
   font-size: 15px;
 }
@@ -55,6 +61,7 @@ footer {
 .link-icons {
   display: flex;
 }
+
 .link-icons img {
   margin-left: 10px;
   opacity: 0.7;
