@@ -1,0 +1,310 @@
+#content {
+    margin: 0 auto;
+}
+
+#shop {
+    position: relative;
+    padding-left: 45px;
+    padding-right: 45px;
+    margin: 0 auto;
+    min-height: 600px;
+    margin-top: 200px;
+}
+
+/* 왼쪽 카테고리 */
+
+#leftmenuwrap {
+    position: absolute;
+    left: 60px;
+    top: 0;
+    padding-bottom: 100px;
+    width: 200px;
+}
+
+#leftmenu {
+    width: 200px;
+}
+
+#menu-all-wrap {
+    font-family: 'Monserrat', 'sans-serif';
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: -5px;
+}
+
+.menu-all-sub ol {
+    list-style: none;
+}
+
+#menu-all-wrap a {
+    text-decoration: none;
+    transition-duration: 0.3s;
+}
+
+.menu-all-sub ol > li a {
+    color: #5E2E2E;
+}
+
+#menu-all span {
+    position: relative;
+    text-decoration: none;
+}
+
+.menu-all-sub ol > li {
+    width: 100%;
+    margin-bottom: 15px;
+    line-height: 30px;
+    display: inline-block;
+    padding: 0;
+    vertical-align: top;
+}
+
+.menu-all-sub ol > li > ul {
+    padding: 0;
+    line-height: 20px;
+    font-size:11px;
+}
+
+li {
+    list-style: none;
+}
+
+/* 우측 item */
+
+#itemcontent {
+    margin-left: 230px;
+}
+
+.new-arrival {
+    margin: 0 auto;
+    font-family: 'Montserrat', 'Nanum Gothic', sans-serif;
+}
+
+.new-arrival .prdpadding {
+    margin: 0 15px 70px 15px;
+}
+
+#title {
+    text-align: center;
+    margin: 0 auto;
+}
+
+#title h2 {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Montserrat', 'sans-serlf';
+    color: #5E2E2E;
+}
+
+.new-arrival ul {
+    zoom: 1;
+    width: 100%;
+    margin-bottom: 0;
+    display: table;
+    font-size: 0;
+}
+
+.new-arrival ul.arrival3 > li {
+    display: inline-block;
+    width: 33.33%;
+    text-align: center;
+    vertical-align: top;
+}
+
+.new-arrival .prdline {
+    margin-bottom: 0;
+}
+
+.arrival-image {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: none;
+  }
+
+.prdline:hover .arrival-image {
+    display: block;
+  }
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.arrival-image {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: none;
+    transition: opecity 0.3s linear;
+  }
+
+.prdline:hover .arrival-image {
+    opacity: 1;
+    
+  }
+
+img {
+    border: none;
+    vertical-align: top;
+}
+
+.new-arrival .colorWrap {
+    height: 19px;
+}
+
+.new-arrival .color {
+    padding-top: 7px;
+    text-align: right;
+}
+
+.displaynone {
+    display: none !important;
+}
+
+.new-arrival .name {
+    clear: both;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.new-arrival .name a {
+    color: #5E2E2E !important;
+    font-size: 18px !important;
+}
+
+.new-arrival .prices {
+    line-height: 18px;
+    color: #5E2E2E;
+    font-size: 11px;
+}
+
+.new-arrival .custom {
+    font-size: 16px;
+    color: #727272;
+    margin-right: 5px;
+    text-decoration: none !important;
+}
+
+strike{
+    text-decoration: line-through;
+}
+
+.new-arrival .normal {
+    font-size: 16px;
+    color: #5E2E2E;
+    text-decoration: none !important;
+}
+
+.new-arrival .info {
+    margin-top: 10px;
+    line-height: 18px;
+    font-size: 11px;
+    color: #5E2E2E;
+}
+
+.new-arrival .icon img {
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+/* best item */
+
+.best-item {
+    margin: 0 auto;
+    font-family: 'Montserrat', 'Nanum Gothic', sans-serif;
+}
+
+.best-item ul {
+    zoom: 1;
+    width: 100%;
+    margin-bottom: 0;
+    display: table;
+    font-size: 0;
+}
+
+.best-item ul.item4 > li {
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+    vertical-align: top;
+}
+
+.best-item .prdpadding {
+    margin: 0 15px 70px 15px;
+}
+
+.best-item .prdline {
+    margin-bottom: 0;
+}
+
+.best-item .colorWrap {
+    height: 19px;
+}
+
+.best-item .color {
+    padding-top: 7px;
+    text-align: right;
+}
+
+.best-item .name {
+    clear: both;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.best-item .name a {
+    color: #5E2E2E !important;
+    font-size: 18px !important;
+}
+
+.best-item .prices {
+    line-height: 18px;
+    color: #5E2E2E;
+    font-size: 11px;
+}
+
+.best-item .custom {
+    font-size: 16px;
+    color: #727272;
+    margin-right: 5px;
+    text-decoration: none !important;
+}
+
+.best-item .normal {
+    font-size: 16px;
+    color: #5E2E2E;
+    text-decoration: none !important;
+}
+
+.best-item .info {
+    margin-top: 10px;
+    line-height: 18px;
+    font-size: 11px;
+    color: #5E2E2E;
+}
+
+.best-item .icon img {
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.item-image {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: none;
+  }
+
+.prdline:hover .item-image {
+    display: block;
+    transform: 0.3s;
+  }
